@@ -45,7 +45,13 @@
             </li>
 		  {% endfor %}	
             
-
+		  {% if site.data.sitetext[site.locale].timeline.end %}	
+			<li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>{{ site.data.sitetext[site.locale].timeline.end }}</h4>
+              </div>
+            </li>
+		  {% endif %}
 
           </ul>
         </div>
@@ -98,7 +104,13 @@
           </li>
     {% endfor %}	
           
-
+    {% if site.data.sitetext.timeline.end %}	
+    <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>{{ site.data.sitetext.timeline.end }}</h4>
+            </div>
+          </li>
+    {% endif %}
 
         </ul>
       </div>
